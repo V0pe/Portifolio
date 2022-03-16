@@ -8,35 +8,35 @@
 
 ## Built With
 
-- HTML
-- CSS
+>- HTML
+>- CSS
 
 ## Getting Started
 > To get a local copy, follow the following steps
 
 Prerequisites
-- VS code 
-- Git Bash
+>- VS code 
+>- Git Bash
 
 Setup
-- Git clone `https://github.com/V0pe/Portfolio.git`
+>- Git clone `https://github.com/V0pe/Portfolio.git`
 
 
 ## Author
 
 👤 **Victor Damola**
 
-- GitHub: [@V0pe](https://github.com/V0pe)
-- Twitter: [@de_vope_](https://twitter.com/de_vope)
-- LinkedIn: [Victor Damola](https://linkedin.com/in/victor-damola-aderibigbe-27931ab0)
+>- GitHub: [@V0pe](https://github.com/V0pe)
+>- Twitter: [@de_vope_](https://twitter.com/de_vope)
+>- LinkedIn: [Victor Damola](https://linkedin.com/in/victor-damola-aderibigbe-27931ab0)
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+>Contributions, issues, and feature requests are welcome!
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+>Give a ⭐️ if you like this project!
 
 ## 📝 License
 
