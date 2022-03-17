@@ -1,5 +1,7 @@
 body {
   font-family: "Inter", sans-serif;
+  display: block;
+  margin: 0;
 }
 
 .headline {
