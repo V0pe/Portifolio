@@ -1,0 +1,60 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.headline {
+  background-image: url(images/header-illsutration-mobile@2x.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+}
+
+.header {
+  display: flex;
+  height: 48px;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.navbar {
+  padding-top: 20px;
+  margin-right: 20px;
+}
+
+.header h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 12px;
+}
+
+.primary h1 span {
+  color: #36b37e;
+}
+
+.primary h1 {
+  color: #172b4d;
+  margin-top: 70px;
+  text-align: center;
+  font-size: 40px;
+  align-content: flex-start;
+}
+
+#bio {
+  text-align: center;
+  margin: 58px 0;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  margin-left: 100px;
+}
+
+.disabled_button img {
+  margin: 75px 0 0 180px;
+}
