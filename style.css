@@ -8,30 +8,44 @@ body {
   background-image: url(images/header-illsutration-mobile@2x.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 720px;
   display: flex;
 }
 
 .header {
   display: flex;
   height: 48px;
-  margin: 0;
+  margin-top: 44px;
   justify-content: space-between;
 }
 
-.navbar {
-  padding-top: 20px;
-  margin-right: 20px;
+.disabled_button img {
+  margin: 75px 0 0 180px;
 }
 
-.header h3 {
+.navbar button {
+  display: inline-flex;
+  margin-right: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.navbar button:focus {
+  border: none;
+  outline: none;
+}
+
+.navbar button img:hover {
+  transform: scale(1.5);
+}
+
+.header a {
   font-size: 20px;
   font-weight: bold;
   margin-left: 12px;
-}
-
-.primary h1 span {
-  color: #36b37e;
+  color: #28352f;
+  text-decoration: none;
 }
 
 .primary h1 {
@@ -42,6 +56,11 @@ body {
   align-content: flex-start;
 }
 
+.primary h1 span {
+  padding-top: 100px;
+  color: #36b37e;
+}
+
 #bio {
   text-align: center;
   margin: 58px 0;
@@ -50,13 +69,18 @@ body {
   line-height: 28px;
 }
 
-.social {
+.social ul {
   display: flex;
   justify-content: space-around;
   width: 200px;
-  margin-left: 100px;
+  margin: 58px 0 58px 80px;
+  list-style-type: none;
 }
 
-.disabled_button img {
-  margin: 75px 0 0 180px;
+.social li a {
+  order: 2;
+}
+
+.social li a img:hover {
+  transform: scale(1.5);
 }
