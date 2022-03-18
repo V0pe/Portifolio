@@ -2,6 +2,7 @@ body {
   font-family: "Inter", sans-serif;
   display: block;
   margin: 0;
+  background-color: #fff;
 }
 
 .headline {
@@ -20,7 +21,7 @@ body {
 }
 
 .disabled_button img {
-  margin: 75px 0 0 180px;
+  margin: 60px 0 0 180px;
 }
 
 .navbar button {
@@ -29,11 +30,6 @@ body {
   border: none;
   background: none;
   cursor: pointer;
-}
-
-.navbar button:focus {
-  border: none;
-  outline: none;
 }
 
 .navbar button img:hover {
@@ -83,4 +79,209 @@ body {
 
 .social li a img:hover {
   transform: scale(1.5);
+}
+
+.work-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.work-title h2 {
+  color: #172b4d;
+  margin: 24px 0;
+  font-weight: bold;
+  line-height: 52px;
+  font-size: 40px;
+}
+
+.portfolio-box {
+  margin-top: 62px;
+  display: grid;
+  grid-template-rows: repeat(6, 474px);
+  grid-gap: 0;
+}
+
+.portfolio {
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 22px 24px 26px;
+  padding-top: 210px;
+}
+
+.portfolio-details {
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 327px;
+}
+
+.portfolio-details h2 {
+  margin: 16px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.portfolio-details ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 16px 0;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.portfolio-details li {
+  margin-right: 5px;
+  background-color: #ebf0ee;
+  padding: 8px 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  height: 16px;
+  letter-spacing: 0.03em;
+  font-family: 'Inter', sans-serif;
+  color: #3a4a42;
+}
+
+.portfolio-details button {
+  background-color: #36b37f;
+  border-radius: 4px;
+  color: #fff;
+  width: 122px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.portfolio-details button:hover {
+  box-shadow: 0 15px 20px rgba(172, 243, 215, 0.4);
+}
+
+.about {
+  margin-top: 0;
+  padding-top: 40px;
+  background-image: url(images/Mask\ Group.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: -30px;
+  background-size: 70px;
+}
+
+.about-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0;
+  background-image: url(images/illustration-\ about\ me-\ mobile.svg);
+  background-repeat: no-repeat;
+  background-position-y: -50px;
+}
+
+.about-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 52px;
+  padding: 0 100px;
+  height: 48px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.about-summary p {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #42526e;
+}
+
+.resume {
+  background-color: #36b37f;
+  color: #fff;
+  border-radius: 4px;
+  width: 159px;
+  height: 48px;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+  margin-bottom: 24px;
+}
+
+.resume:hover {
+  box-shadow: 0 15px 20px rgba(172, 243, 215, 0.4);
+}
+
+.technologies {
+  display: grid;
+  grid-template-rows: repeat(3, 352px);
+  gap: 24px;
+  margin: 59px 0;
+}
+
+.tech {
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech h2 {
+  text-align: center;
+}
+
+.tech ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  padding: 0;
+  margin: 2px;
+}
+
+.tech li {
+  text-decoration: none;
+  background: #fff;
+  border-radius: 8px;
+  color: #36b37e;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding: 14px;
+  margin: 4px 6px;
+}
+
+.navbar button:focus {
+  border: none;
+  outline: none;
 }
