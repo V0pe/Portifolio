@@ -193,15 +193,15 @@ body {
   padding-top: 0;
   background-image: url(images/illustration-\ about\ me-\ mobile.svg);
   background-repeat: no-repeat;
-  background-position-y: -50px;
+  background-position-y: -47px;
 }
 
 .about-title {
   font-style: normal;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 40px;
   line-height: 52px;
-  padding: 0 100px;
+  padding: 0 20px;
   height: 48px;
   margin-top: 0;
   margin-bottom: 24px;
