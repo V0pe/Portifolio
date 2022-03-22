@@ -341,7 +341,7 @@ ul {
 .contact input::placeholder {
   height: 18px;
   color: #6b778c;
-  padding-left: 16px;
+  margin-left: 12px;
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
@@ -354,7 +354,7 @@ ul {
   font-style: normal;
   line-height: 24px;
   color: #091e42;
-  padding: 12px 0 0 12px;
+  margin: 12px 0 0 12px;
 }
 
 .contact form li + li {
@@ -411,3 +411,4 @@ ul {
 .contact form button:hover {
   box-shadow: 0 15px 20px rgba(172, 243, 215, 0.4);
 }
+
