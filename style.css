@@ -77,6 +77,7 @@ ul {
   display: flex;
   justify-content: center;
   margin: 60px 0;
+  padding-left: 5px;
   list-style-type: none;
 }
 
@@ -341,7 +342,7 @@ ul {
 .contact input::placeholder {
   height: 18px;
   color: #6b778c;
-  padding-left: 16px;
+  margin-left: 12px;
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
@@ -354,7 +355,7 @@ ul {
   font-style: normal;
   line-height: 24px;
   color: #091e42;
-  padding: 12px 0 0 12px;
+  margin: 12px 0 0 12px;
 }
 
 .contact form li + li {
