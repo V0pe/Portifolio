@@ -5,12 +5,20 @@ body {
   background-color: #fff;
 }
 
-.headline {
-  background-image: url(images/header-illsutration-mobile@2x.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 720px;
-  display: flex;
+ul {
+  list-style: none;
+}
+
+@media only screen and (min-device-width: 330px) {
+  .headline {
+    background-image: url(images/header-illsutration-mobile@2x.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    height: 726px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .header {
@@ -21,7 +29,7 @@ body {
 }
 
 .disabled_button img {
-  margin: 60px 0 0 190px;
+  margin-left: 180px;
 }
 
 .navbar button {
@@ -67,13 +75,13 @@ body {
 
 .social ul {
   display: flex;
-  justify-content: space-around;
-  width: 200px;
-  margin: 58px 0 58px 80px;
+  justify-content: center;
+  margin: 60px 0;
   list-style-type: none;
 }
 
 .social li a {
+  margin: 10px;
   order: 2;
 }
 
@@ -97,21 +105,27 @@ body {
 }
 
 .portfolio-box {
-  margin-top: 62px;
   display: grid;
   grid-template-rows: repeat(6, 474px);
-  grid-gap: 0;
+  gap: 24px;
+  margin: 62px 22px 0 26px;
 }
 
 .portfolio {
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
+  box-sizing: border-box;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 22px 24px 26px;
   padding-top: 210px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .portfolio {
+    max-width: 480px;
+  }
 }
 
 .portfolio-details {
@@ -135,26 +149,26 @@ body {
 
 .portfolio-details ul {
   display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 0;
   margin: 16px 0;
   list-style: none;
-  justify-content: space-around;
+  justify-content: center;
+  text-align: center;
 }
 
 .portfolio-details li {
   margin-right: 5px;
   background-color: #ebf0ee;
-  padding: 8px 16px;
+  padding: 8px 12px;
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
   line-height: 16px;
-  height: 16px;
   letter-spacing: 0.03em;
-  font-family: 'Inter', sans-serif;
   color: #3a4a42;
+  border-radius: 4px;
+  white-space: nowrap;
 }
 
 .portfolio-details button {
@@ -169,10 +183,6 @@ body {
   line-height: 24px;
   border: none;
   cursor: pointer;
-}
-
-.portfolio-details button:hover {
-  box-shadow: 0 15px 20px rgba(172, 243, 215, 0.4);
 }
 
 .about {
@@ -251,6 +261,12 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-device-width: 480px) {
+  .tech {
+    max-width: 480px;
+  }
+}
+
 .tech h2 {
   text-align: center;
 }
@@ -281,7 +297,117 @@ body {
   margin: 4px 6px;
 }
 
+.contact {
+  background-image: url(images/conatct-backgrd.svg);
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position-x: right;
+  background-position-y: 640px;
+}
+
+.contact-header {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin: 0 24px 58px 24px;
+}
+
+.contact form {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact form input {
+  min-width: 360px;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.contact input::placeholder {
+  height: 18px;
+  color: #6b778c;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.contact textarea::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 24px;
+  color: #091e42;
+  padding: 12px 0 0 12px;
+}
+
+.contact form li + li {
+  margin-top: 24px;
+}
+
+.contact textarea {
+  height: 114px;
+  width: 360px;
+  background: #fff;
+  border: 1px solid #60c095;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.contact form button {
+  width: 129px;
+  height: 48px;
+  left: 99px;
+  background: #36b37f;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin-top: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.email-footer {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  margin-top: -50px;
+  padding-bottom: 250px;
+}
+
+.portfolio-details button:hover {
+  box-shadow: 0 15px 20px rgba(172, 243, 215, 0.4);
+}
+
 .navbar button:focus {
   border: none;
   outline: none;
+}
+
+.contact form button:hover {
+  box-shadow: 0 15px 20px rgba(172, 243, 215, 0.4);
 }
