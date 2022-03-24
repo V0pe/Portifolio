@@ -351,7 +351,6 @@ ul a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex-wrap: wrap;
   width: 47vw;
 }
 
@@ -361,11 +360,7 @@ ul a {
   color: #172b4d;
   margin: 0;
   font-size: 2.3vw;
-  padding: 7vw 0 15vw 0;
-}
-
-#fullname {
-  display: none;
+  padding: 5vw 0 15vw 0;
 }
 
 .contact form ul {

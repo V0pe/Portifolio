@@ -402,11 +402,6 @@ ul {
   cursor: pointer;
 }
 
-#firstname,
-#lastname {
-  display: none;
-}
-
 .email-footer {
   text-align: center;
   font-style: normal;
