@@ -30,6 +30,7 @@ ul {
   display: flex;
   flex-direction: column;
 }
+
 .header {
   display: flex;
   height: 48px;
@@ -81,14 +82,9 @@ ul {
   text-align: center;
   margin: 58px 0;
   font-style: normal;
-  font-weight: 400px;
   font-size: 20px;
   line-height: 28px;
   white-space: pre-line;
-}
-
-#bio br {
-  display: none;
 }
 
 .social ul {
@@ -241,10 +237,6 @@ ul {
   white-space: pre-line;
 }
 
-.about-summary p br {
-  display: none;
-}
-
 .resume {
   background-color: #36b37f;
   color: #fff;
@@ -330,7 +322,7 @@ ul {
   line-height: 52px;
   color: #172b4d;
   margin: 0 24px 58px 24px;
-  white-space: pre-line
+  white-space: pre-line;
 }
 
 .contact-header br {
@@ -427,8 +419,7 @@ ul {
 }
 
 .portfolio-details button:hover {
-  box-shadow: 0 15px 20px
-   rgba(172, 243, 215, 0.4);
+  box-shadow: 0 15px 20px rgba(172, 243, 215, 0.4);
 }
 
 .navbar button:focus {
@@ -441,5 +432,13 @@ ul {
 }
 
 hr {
+  display: none;
+}
+
+.about-summary p br {
+  display: none;
+}
+
+#bio br {
   display: none;
 }
