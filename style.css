@@ -16,9 +16,7 @@ ul {
 }
 
 .navbar ul {
-  visibility: hidden;
-  align-self: center;
-  display: flex;
+  display: none;
 }
 
 .headline {
