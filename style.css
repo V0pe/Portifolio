@@ -15,6 +15,14 @@ ul {
   align-items: flex-start;
 }
 
+#name {
+  transition: all 1s;
+}
+
+#name:hover {
+  transform: rotate(360deg);
+}
+
 .navbar ul {
   display: none;
 }
@@ -47,6 +55,7 @@ ul {
   border: none;
   background: none;
   cursor: pointer;
+  transition: all 1s;
 }
 
 .navbar button img:hover {

@@ -43,6 +43,7 @@ ul a {
   font-size: 1vw;
   font-style: normal;
   font-weight: bold;
+  transition: font-size 0.5s;
 }
 
 .headline {
@@ -192,6 +193,7 @@ ul a {
   line-height: 1vw;
   border: none;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .about {
@@ -246,6 +248,7 @@ ul a {
   border: none;
   margin-bottom: 3.5vw;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .resume:hover {
@@ -429,6 +432,7 @@ ul a {
   margin-top: 2.3vw;
   border: none;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 hr {
@@ -438,6 +442,10 @@ hr {
 
 .email-footer {
   display: none;
+}
+
+.navbar li a:hover {
+  font-size: 1.2vw;
 }
 
 .social li a img:hover {
