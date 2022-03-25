@@ -16,9 +16,7 @@ ul {
 }
 
 .navbar ul {
-  visibility: hidden;
-  align-self: center;
-  display: flex;
+  display: none;
 }
 
 .headline {
@@ -46,7 +44,6 @@ ul {
 
 .navbar button {
   display: inline-flex;
-  margin-right: 20px;
   border: none;
   background: none;
   cursor: pointer;

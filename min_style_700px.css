@@ -25,17 +25,15 @@ ul a {
 .header {
   display: flex;
   justify-content: center;
-  margin-left: -100px;
 }
 
 #name,
 .navbar button {
-  visibility: hidden;
+  display: none;
 }
 
 .navbar ul {
   display: flex;
-  visibility: visible;
   align-content: flex-start;
 }
 
