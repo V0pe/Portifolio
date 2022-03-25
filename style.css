@@ -9,16 +9,24 @@ ul {
   list-style: none;
 }
 
-@media only screen and (min-device-width: 330px) {
-  .headline {
-    background-image: url(images/header-illsutration-mobile@2x.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: right;
-    height: 726px;
-    display: flex;
-    flex-direction: column;
-  }
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.navbar ul {
+  display: none;
+}
+
+.headline {
+  background-image: url(images/header-illsutration-mobile@2x.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  height: 726px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -29,12 +37,13 @@ ul {
 }
 
 .disabled_button img {
-  margin-left: 180px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar button {
   display: inline-flex;
-  margin-right: 20px;
   border: none;
   background: none;
   cursor: pointer;
@@ -58,6 +67,7 @@ ul {
   text-align: center;
   font-size: 40px;
   align-content: flex-start;
+  white-space: pre-line;
 }
 
 .primary h1 span {
@@ -71,6 +81,7 @@ ul {
   font-style: normal;
   font-size: 20px;
   line-height: 28px;
+  white-space: pre-line;
 }
 
 .social ul {
@@ -121,12 +132,6 @@ ul {
   flex-direction: column;
   align-items: center;
   padding-top: 210px;
-}
-
-@media only screen and (max-device-width: 480px) {
-  .portfolio {
-    max-width: 480px;
-  }
 }
 
 .portfolio-details {
@@ -226,6 +231,7 @@ ul {
   margin-top: 0;
   margin-bottom: 24px;
   color: #42526e;
+  white-space: pre-line;
 }
 
 .resume {
@@ -244,6 +250,11 @@ ul {
   box-shadow: 0 15px 20px rgba(172, 243, 215, 0.4);
 }
 
+.resume:focus {
+  background-color: #008552;
+  box-shadow: none;
+}
+
 .technologies {
   display: grid;
   grid-template-rows: repeat(3, 352px);
@@ -260,12 +271,6 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-@media only screen and (max-device-width: 480px) {
-  .tech {
-    max-width: 480px;
-  }
 }
 
 .tech h2 {
@@ -314,6 +319,11 @@ ul {
   line-height: 52px;
   color: #172b4d;
   margin: 0 24px 58px 24px;
+  white-space: pre-line;
+}
+
+.contact-header br {
+  display: none;
 }
 
 .contact form {
@@ -411,4 +421,16 @@ ul {
 
 .contact form button:hover {
   box-shadow: 0 15px 20px rgba(172, 243, 215, 0.4);
+}
+
+hr {
+  display: none;
+}
+
+.about-summary p br {
+  display: none;
+}
+
+#bio br {
+  display: none;
 }
