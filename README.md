@@ -11,7 +11,7 @@
 >- HTML
 >- CSS
 
-## Live Demo (if available)
+## Live Demo
 
 > You can access the live version by clicking [here](https://V0pe.github.io/Portifolio/)
 
