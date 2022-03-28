@@ -3,7 +3,7 @@
 
 # PortFolio Website Mobile Version
 
-> This project delineates the development of portfolio.
+> This project delineates the development of my Portfolio.
 
 
 ## Built With
@@ -13,7 +13,7 @@
 
 ## Live Demo (if available)
 
-You can access the live version by clicking[here](https://V0pe.github.io/Portifolio/)
+> You can access the live version by clicking [here](https://V0pe.github.io/Portifolio/)
 
 
 ## Getting Started
