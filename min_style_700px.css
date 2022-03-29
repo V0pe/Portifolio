@@ -419,6 +419,12 @@ ul a {
   padding: 12px;
 }
 
+.contact form label {
+  display: block;
+  margin-bottom: 0.5vw;
+  font-size: 1.5vw;
+}
+
 .contact form button {
   width: 9.5vw;
   height: 3.5vw;
