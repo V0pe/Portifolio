@@ -72,7 +72,6 @@ ul {
 
 .primary h1 {
   color: #172b4d;
-  margin-top: 70px;
   text-align: center;
   font-size: 40px;
   align-content: flex-start;
@@ -81,7 +80,7 @@ ul {
 
 .primary h1 span {
   padding-top: 100px;
-  color: #36b37e;
+  color: #1b5a40;
 }
 
 #bio {
@@ -187,7 +186,7 @@ ul {
 }
 
 .portfolio-details button {
-  background-color: #36b37f;
+  background-color: #1b5a40;
   border-radius: 4px;
   color: #fff;
   width: 122px;
@@ -244,7 +243,7 @@ ul {
 }
 
 .resume {
-  background-color: #36b37f;
+  background-color: #1b5a40;
   color: #fff;
   border-radius: 4px;
   width: 159px;
@@ -260,7 +259,7 @@ ul {
 }
 
 .resume:focus {
-  background-color: #008552;
+  background-color: #36b37f;
   box-shadow: none;
 }
 
@@ -302,7 +301,7 @@ ul {
   text-decoration: none;
   background: #fff;
   border-radius: 8px;
-  color: #36b37e;
+  color: #1b5a40;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -340,6 +339,13 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto 0 auto;
+}
+
+.contact form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .contact form ul {
@@ -395,7 +401,7 @@ ul {
   width: 129px;
   height: 48px;
   left: 99px;
-  background: #36b37f;
+  background: #1b5a40;
   border-radius: 4px;
   color: #fff;
   text-align: center;
@@ -430,6 +436,11 @@ ul {
 
 .contact form button:hover {
   box-shadow: 0 15px 20px rgba(172, 243, 215, 0.4);
+}
+
+.contact form button:focus {
+  box-shadow: none;
+  background: #36b37f;
 }
 
 hr {

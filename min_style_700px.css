@@ -66,7 +66,7 @@ ul a {
 }
 
 .primary h1 span {
-  color: #36b37e;
+  color: #1b5a40;
 }
 
 #bio {
@@ -183,7 +183,7 @@ ul a {
 }
 
 .portfolio-details button {
-  background-color: #36b37f;
+  background-color: #1b5a40;
   border-radius: 4px;
   color: #fff;
   width: 9.3vw;
@@ -239,7 +239,7 @@ ul a {
 }
 
 .resume {
-  background-color: #36b37f;
+  background-color: #1b5a40;
   color: #fff;
   border-radius: 0.5vw;
   width: 13vw;
@@ -256,7 +256,7 @@ ul a {
 }
 
 .resume:focus {
-  background-color: #008552;
+  background-color: #36b37f;
   box-shadow: none;
 }
 
@@ -308,7 +308,7 @@ ul a {
   text-decoration: none;
   background: #fff;
   border-radius: 0.5vw;
-  color: #36b37e;
+  color: #1b5a40;
   font-weight: 600;
   font-size: 1vw;
   letter-spacing: 0.03em;
@@ -419,10 +419,16 @@ ul a {
   padding: 12px;
 }
 
+.contact form label {
+  display: block;
+  margin-bottom: 0.5vw;
+  font-size: 1.5vw;
+}
+
 .contact form button {
   width: 9.5vw;
   height: 3.5vw;
-  background: #36b37f;
+  background: #1b5a40;
   border-radius: 4px;
   color: #fff;
   text-align: center;
@@ -462,7 +468,7 @@ hr {
 }
 
 .portfolio-details button:focus {
-  background-color: #008552;
+  background-color: #36b37f;
   box-shadow: none;
 }
 
@@ -471,6 +477,6 @@ hr {
 }
 
 .contact form button:focus {
-  background-color: #008552;
+  background-color: #36b37f;
   box-shadow: none;
 }
