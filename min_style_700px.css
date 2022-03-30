@@ -256,7 +256,7 @@ ul a {
 }
 
 .resume:focus {
-  background-color: #008552;
+  background-color: #36b37f;
   box-shadow: none;
 }
 
@@ -468,7 +468,7 @@ hr {
 }
 
 .portfolio-details button:focus {
-  background-color: #008552;
+  background-color: #36b37f;
   box-shadow: none;
 }
 
@@ -477,6 +477,6 @@ hr {
 }
 
 .contact form button:focus {
-  background-color: #008552;
+  background-color: #36b37f;
   box-shadow: none;
 }

@@ -259,7 +259,7 @@ ul {
 }
 
 .resume:focus {
-  background-color: #008552;
+  background-color: #36b37f;
   box-shadow: none;
 }
 
@@ -436,6 +436,11 @@ ul {
 
 .contact form button:hover {
   box-shadow: 0 15px 20px rgba(172, 243, 215, 0.4);
+}
+
+.contact form button:focus {
+  box-shadow: none;
+  background: #36b37f;
 }
 
 hr {
