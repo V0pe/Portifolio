@@ -25,9 +25,9 @@ nav {
 
 .navbar {
   position: absolute;
-  top: -90vh;
+  top: -98vh;
   background: white;
-  height: 80vh;
+  height: 90vh;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   width: 100%;
@@ -64,6 +64,7 @@ nav {
 }
 
 nav .fa {
+  font-size: 30px;
   cursor: pointer;
   transition: all 1s;
 }
@@ -459,8 +460,8 @@ hr {
   font-weight: 100;
   cursor: pointer;
   position: absolute;
-  right: 10%;
-  top: 5%;
+  right: 6%;
+  top: 6%;
 }
 
 .navbar li a {
@@ -472,10 +473,6 @@ hr {
 
 .navbar ul li {
   display: block;
-}
-
-nav .fa:hover {
-  transform: scale(1.5);
 }
 
 .contact form li + li {
