@@ -19,20 +19,24 @@
       media="screen and (min-width: 700px)"
       href="min_style_700px.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header class="header-container">
       <div class="header">
+        <nav>
         <a href="#" id="name">Victor</a>
-        <nav class="navbar">
+        <div class="navbar">
+          <i class="fa fa-times"></i>
           <ul>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-          <button type="button">
-            <img src="images/Union.png" alt="hambunger menu button" />
-          </button>
+          </div>
+          <i class="fa fa-bars"></i>
         </nav>
       </div>
       <section class="headline">
@@ -71,7 +75,7 @@
         </div>
       </section>
     </header>
-    <section class="work">
+    <section class="work" id="portfolio">
       <div class="work-title">
         <h2>My Recent <br />Works</h2>
         <img src="images/Indicator.png" alt="indicator line" />
@@ -157,7 +161,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-summary">
             <h1 class="about-title">About me</h1>
             <p> I can help you build a product ,
@@ -215,7 +219,7 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contacts">
         <div class="co left">
             <h2 class="contact-header">I'm always
@@ -301,5 +305,6 @@
         </div>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

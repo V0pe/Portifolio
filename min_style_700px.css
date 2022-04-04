@@ -28,7 +28,7 @@ ul a {
 }
 
 #name,
-.navbar button {
+nav .fa {
   display: none;
 }
 
@@ -39,11 +39,21 @@ ul a {
 
 .navbar li a {
   color: #172b4d;
-  margin: 0 2.5vw 0 0;
+  padding: 8px 12px;
   font-size: 1vw;
   font-style: normal;
   font-weight: bold;
   transition: font-size 0.5s;
+}
+
+.navbar li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #172b4d;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
 }
 
 .headline {
