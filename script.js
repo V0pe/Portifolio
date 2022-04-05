@@ -1,7 +1,7 @@
 
 const menuOpen = document.getElementById('menu');
 const navbar = document.querySelector('.navbar');
-const menuClose = document.querySelector('.fa-times');
+const menuClose = document.querySelector('.close');
 const menuList = document.querySelectorAll('.navbars a');
 
 menuOpen.addEventListener('click', () => {
@@ -9,11 +9,11 @@ menuOpen.addEventListener('click', () => {
 })
 
 menuClose.addEventListener('click', () => {
-  navbar.style.top = "-98vh"
+  navbar.style.top = "-110vh"
 });
 
 for (let i = 0; i < 3; i++) {
   menuList[i].addEventListener('click', () => {
-    navbar.style.top = "-98vh";
+    navbar.style.top = "-110vh";
   })
 }

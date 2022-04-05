@@ -25,15 +25,15 @@ nav {
 
 .navbar {
   position: absolute;
-  top: -98vh;
+  top: -110vh;
   background: white;
-  height: 90vh;
+  height: 100vh;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   width: 100%;
   z-index: 2;
   left: 0;
-  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 25px 25px rgba(37, 47, 137, 0.08);
 }
 
 .navbar ul {
@@ -454,14 +454,16 @@ hr {
   display: none;
 }
 
-.navbar .fa {
+.navbar .close {
   display: block;
   font-size: 40px;
   font-weight: 100;
   cursor: pointer;
   position: absolute;
   right: 6%;
-  top: 6%;
+  top: 4%;
+  background: none;
+  border: none;
 }
 
 .navbar li a {
