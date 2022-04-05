@@ -3,13 +3,18 @@
 
 # PortFolio Website Mobile Version
 
-> This project delineates the development of portfolio.
+> This project delineates the development of my Portfolio.
 
 
 ## Built With
 
 >- HTML
 >- CSS
+
+## Live Demo
+
+> You can access the live version by clicking [here](https://V0pe.github.io/Portifolio/)
+
 
 ## Getting Started
 > To get a local copy, follow the following steps

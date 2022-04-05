@@ -28,7 +28,7 @@ ul a {
 }
 
 #name,
-.navbar button {
+nav .fa {
   display: none;
 }
 
@@ -39,11 +39,21 @@ ul a {
 
 .navbar li a {
   color: #172b4d;
-  margin: 0 2.5vw 0 0;
+  padding: 8px 12px;
   font-size: 1vw;
   font-style: normal;
   font-weight: bold;
   transition: font-size 0.5s;
+}
+
+.navbar li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #172b4d;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
 }
 
 .headline {
@@ -66,7 +76,7 @@ ul a {
 }
 
 .primary h1 span {
-  color: #36b37e;
+  color: #1b5a40;
 }
 
 #bio {
@@ -183,7 +193,7 @@ ul a {
 }
 
 .portfolio-details button {
-  background-color: #36b37f;
+  background-color: #1b5a40;
   border-radius: 4px;
   color: #fff;
   width: 9.3vw;
@@ -239,7 +249,7 @@ ul a {
 }
 
 .resume {
-  background-color: #36b37f;
+  background-color: #1b5a40;
   color: #fff;
   border-radius: 0.5vw;
   width: 13vw;
@@ -256,7 +266,7 @@ ul a {
 }
 
 .resume:focus {
-  background-color: #008552;
+  background-color: #36b37f;
   box-shadow: none;
 }
 
@@ -308,7 +318,7 @@ ul a {
   text-decoration: none;
   background: #fff;
   border-radius: 0.5vw;
-  color: #36b37e;
+  color: #1b5a40;
   font-weight: 600;
   font-size: 1vw;
   letter-spacing: 0.03em;
@@ -419,10 +429,16 @@ ul a {
   padding: 12px;
 }
 
+.contact form label {
+  display: block;
+  margin-bottom: 0.5vw;
+  font-size: 1.5vw;
+}
+
 .contact form button {
   width: 9.5vw;
   height: 3.5vw;
-  background: #36b37f;
+  background: #1b5a40;
   border-radius: 4px;
   color: #fff;
   text-align: center;
@@ -462,7 +478,7 @@ hr {
 }
 
 .portfolio-details button:focus {
-  background-color: #008552;
+  background-color: #36b37f;
   box-shadow: none;
 }
 
@@ -471,6 +487,6 @@ hr {
 }
 
 .contact form button:focus {
-  background-color: #008552;
+  background-color: #36b37f;
   box-shadow: none;
 }

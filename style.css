@@ -9,10 +9,10 @@ ul {
   list-style: none;
 }
 
-.navbar {
+nav {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2% 6%;
 }
 
 #name {
@@ -23,25 +23,38 @@ ul {
   transform: rotate(360deg);
 }
 
+.navbar {
+  position: absolute;
+  top: -110vh;
+  background: white;
+  height: 100vh;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  box-shadow: 0 25px 25px rgba(37, 47, 137, 0.08);
+}
+
 .navbar ul {
-  display: none;
+  position: absolute;
+  left: 12px;
+  top: 10%;
 }
 
 .headline {
   background-image: url(images/header-illsutration-mobile@2x.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: right;
+  background-size: cover;
+  background-position: center;
   height: 726px;
   display: flex;
   flex-direction: column;
 }
 
 .header {
-  display: flex;
   height: 48px;
   margin-top: 44px;
-  justify-content: space-between;
 }
 
 .disabled_button img {
@@ -50,46 +63,35 @@ ul {
   margin-right: auto;
 }
 
-.navbar button {
-  display: inline-flex;
-  border: none;
-  background: none;
+nav .fa {
+  font-size: 30px;
   cursor: pointer;
   transition: all 1s;
-}
-
-.navbar button img:hover {
-  transform: scale(1.5);
 }
 
 .header a {
   font-size: 20px;
   font-weight: bold;
-  margin-left: 12px;
   color: #28352f;
   text-decoration: none;
 }
 
 .primary h1 {
   color: #172b4d;
-  margin-top: 70px;
   text-align: center;
   font-size: 40px;
-  align-content: flex-start;
   white-space: pre-line;
 }
 
 .primary h1 span {
-  padding-top: 100px;
-  color: #36b37e;
+  color: #1b5a40;
 }
 
 #bio {
   text-align: center;
-  margin: 58px 0;
   font-style: normal;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 26px;
   white-space: pre-line;
 }
 
@@ -129,7 +131,7 @@ ul {
   display: grid;
   grid-template-rows: repeat(6, 474px);
   gap: 24px;
-  margin: 62px 22px 0 26px;
+  margin: 62px 5% 0 5%;
 }
 
 .portfolio {
@@ -187,7 +189,7 @@ ul {
 }
 
 .portfolio-details button {
-  background-color: #36b37f;
+  background-color: #1b5a40;
   border-radius: 4px;
   color: #fff;
   width: 122px;
@@ -244,7 +246,7 @@ ul {
 }
 
 .resume {
-  background-color: #36b37f;
+  background-color: #1b5a40;
   color: #fff;
   border-radius: 4px;
   width: 159px;
@@ -260,7 +262,7 @@ ul {
 }
 
 .resume:focus {
-  background-color: #008552;
+  background-color: #36b37f;
   box-shadow: none;
 }
 
@@ -276,7 +278,7 @@ ul {
   border: 1px solid #c1c7d0;
   box-sizing: border-box;
   border-radius: 8px;
-  margin: 0 24px;
+  margin: 0 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -302,7 +304,7 @@ ul {
   text-decoration: none;
   background: #fff;
   border-radius: 8px;
-  color: #36b37e;
+  color: #1b5a40;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -340,6 +342,13 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto 0 auto;
+}
+
+.contact form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .contact form ul {
@@ -377,10 +386,6 @@ ul {
   margin: 12px 0 0 12px;
 }
 
-.contact form li + li {
-  margin-top: 24px;
-}
-
 .contact textarea {
   height: 114px;
   width: 360px;
@@ -395,7 +400,7 @@ ul {
   width: 129px;
   height: 48px;
   left: 99px;
-  background: #36b37f;
+  background: #1b5a40;
   border-radius: 4px;
   color: #fff;
   text-align: center;
@@ -432,6 +437,11 @@ ul {
   box-shadow: 0 15px 20px rgba(172, 243, 215, 0.4);
 }
 
+.contact form button:focus {
+  box-shadow: none;
+  background: #36b37f;
+}
+
 hr {
   display: none;
 }
@@ -442,4 +452,31 @@ hr {
 
 #bio br {
   display: none;
+}
+
+.navbar .close {
+  display: block;
+  font-size: 40px;
+  font-weight: 100;
+  cursor: pointer;
+  position: absolute;
+  right: 6%;
+  top: 4%;
+  background: none;
+  border: none;
+}
+
+.navbar li a {
+  display: block;
+  line-height: 44px;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.navbar ul li {
+  display: block;
+}
+
+.contact form li + li {
+  margin-top: 24px;
 }
