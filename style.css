@@ -9,10 +9,10 @@ ul {
   list-style: none;
 }
 
-.navbar {
+nav {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2% 6%;
 }
 
 #name {
@@ -23,25 +23,38 @@ ul {
   transform: rotate(360deg);
 }
 
+.navbar {
+  position: absolute;
+  top: -110vh;
+  background: white;
+  height: 100vh;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  box-shadow: 0 25px 25px rgba(37, 47, 137, 0.08);
+}
+
 .navbar ul {
-  display: none;
+  position: absolute;
+  left: 12px;
+  top: 10%;
 }
 
 .headline {
   background-image: url(images/header-illsutration-mobile@2x.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: right;
+  background-size: cover;
+  background-position: center;
   height: 726px;
   display: flex;
   flex-direction: column;
 }
 
 .header {
-  display: flex;
   height: 48px;
   margin-top: 44px;
-  justify-content: space-between;
 }
 
 .disabled_button img {
@@ -50,22 +63,15 @@ ul {
   margin-right: auto;
 }
 
-.navbar button {
-  display: inline-flex;
-  border: none;
-  background: none;
+nav .fa {
+  font-size: 30px;
   cursor: pointer;
   transition: all 1s;
-}
-
-.navbar button img:hover {
-  transform: scale(1.5);
 }
 
 .header a {
   font-size: 20px;
   font-weight: bold;
-  margin-left: 12px;
   color: #28352f;
   text-decoration: none;
 }
@@ -74,21 +80,18 @@ ul {
   color: #172b4d;
   text-align: center;
   font-size: 40px;
-  align-content: flex-start;
   white-space: pre-line;
 }
 
 .primary h1 span {
-  padding-top: 100px;
   color: #1b5a40;
 }
 
 #bio {
   text-align: center;
-  margin: 58px 0;
   font-style: normal;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 26px;
   white-space: pre-line;
 }
 
@@ -128,7 +131,7 @@ ul {
   display: grid;
   grid-template-rows: repeat(6, 474px);
   gap: 24px;
-  margin: 62px 22px 0 26px;
+  margin: 62px 5% 0 5%;
 }
 
 .portfolio {
@@ -275,7 +278,7 @@ ul {
   border: 1px solid #c1c7d0;
   box-sizing: border-box;
   border-radius: 8px;
-  margin: 0 24px;
+  margin: 0 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -383,10 +386,6 @@ ul {
   margin: 12px 0 0 12px;
 }
 
-.contact form li + li {
-  margin-top: 24px;
-}
-
 .contact textarea {
   height: 114px;
   width: 360px;
@@ -453,4 +452,31 @@ hr {
 
 #bio br {
   display: none;
+}
+
+.navbar .close {
+  display: block;
+  font-size: 40px;
+  font-weight: 100;
+  cursor: pointer;
+  position: absolute;
+  right: 6%;
+  top: 4%;
+  background: none;
+  border: none;
+}
+
+.navbar li a {
+  display: block;
+  line-height: 44px;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.navbar ul li {
+  display: block;
+}
+
+.contact form li + li {
+  margin-top: 24px;
 }
