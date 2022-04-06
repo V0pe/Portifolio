@@ -5,6 +5,10 @@ body {
   background-color: #fff;
 }
 
+.no-scoll {
+  overflow:hidden;
+}
+
 ul {
   list-style: none;
 }
