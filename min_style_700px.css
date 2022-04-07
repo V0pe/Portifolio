@@ -5,6 +5,10 @@ body {
   font-style: normal;
 }
 
+.no-scoll {
+  overflow: hidden;
+}
+
 ul {
   list-style: none;
 }
@@ -28,7 +32,8 @@ ul a {
 }
 
 #name,
-nav .fa {
+nav .fa,
+.navbar .close {
   display: none;
 }
 
