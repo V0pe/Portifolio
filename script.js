@@ -28,7 +28,7 @@ style.innerHTML = `
   top:0%;
   z-index: 2;
   padding: 0;
-  background: #C1C7D0;
+  background: rgba(193,199,208, 0.9);
   min-width: 100vw;
   min-height: 100vh;
   overflow-y: scroll !important;
@@ -134,7 +134,7 @@ img.modal-close{
   top:0%;
   z-index: 2;
   padding: 0;
-  background: #C1C7D0;
+  background: rgba(193,199,208, 0.9);
   min-width: 100vw;
   min-height: 100vh;
   display:flex;
