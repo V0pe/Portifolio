@@ -20,58 +20,12 @@ for (let i = 0; i < 3; i++) {
 
 // Modal DOM
 
-const portfolioPopUp = document.createElement('div'); // Create popup div
-portfolioPopUp.className = 'popup';
-portfolioPopUp.innerHTML = `
-<div class="content">
-<div class="modal-close"><img src="images/modal-close.png" alt=""></div>
-<div class="thumbnail"><img class="modal-close" src="images/mobile-close-modal.png" alt="close-modal"> </div>
-<div class="content-description"> 
-    <div class="deskstop-display">
-    <h2>Keeping track of hundreds of
-    components</h2>
-    <div class="live-project"><button>See Live <img src="images/live-icon.png" alt=""> </button>
-        <button>See Source <img src="images/source-icom.png" alt=""> </button>
-
-     </div>
-     </div>
-    <ul class="mobile-list"><li>Ruby on rails</li>
-        <li>Css</li>
-        <li>Javascript</li>
-    </ul>
-    <ul class="deskstop-list">
-        <li>CodeKit</li>
-        <li>Github</li>
-        <li>Javascript</li>
-        <li>Bootstrap</li>
-        <li>Terminal</li>
-        <li>Codepen</li>
-    </ul>
-    <p>Lorem Ipsum is simply dummy text of the
-       printing and typesetting industry. Lorem
-       Ipsum has been the industry's standard 
-       dummy text ever since the 1500s, when an 
-       unknown printer took a galley of type and 
-       scrambled it 1960s with the releaLorem 
-       Ipsum is simply dummy text of the printing 
-       and typesetting industry. Lorem Ipsum has 
-       been the industry's standard dummy text 
-       ever since the 1500s, when an unknown
-        printer took a galley of type and scrambled
-         it 1960s with the relea</p>
-         <div class="live-project"><button>See Live <img src="images/live-icon.png" alt=""> </button>
-            <button>See Source <img src="images/source-icom.png" alt=""> </button>
-
-         </div>
-</div>
-</div>
-`;
 
 const style = document.createElement('style');
 style.innerHTML = `
 .popup {
   position:fixed;
-  top:-100%;
+  top:0%;
   z-index: 2;
   padding: 0;
   background: #C1C7D0;
@@ -93,7 +47,7 @@ style.innerHTML = `
    flex-direction: column;
 }
 .content .thumbnail {
-  background-image: url(images/mobile-snapshot.png);
+  background-image: url(images/image-details-1.png););
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 100%;
@@ -102,6 +56,7 @@ style.innerHTML = `
   margin: 4vw auto;
   border-radius: 8px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 img.modal-close{
@@ -176,7 +131,7 @@ img.modal-close{
 }  
 .popup {
   position:fixed;
-  top:-100%;
+  top:0%;
   z-index: 2;
   padding: 0;
   background: #C1C7D0;
@@ -239,14 +194,18 @@ img.modal-close{
    padding: 0;
 }
 
+.content-description .deskstop-list {
+  display: flex;
+}
+
 .content-description ul li {
    background-color:#ebf0ee;
    border-radius: 4px;
-   padding: 8px 12px;
-   margin: 0px 8px;
+   padding: 0.5vw 1vw;
+   margin: 0px 0.3vw;
    font-weight: 600;
-   font-size: 15px;
-   line-height: 16px;
+   font-size: 1.3vw;
+   line-height: 2vw;
 }
 
 .content-description p {
@@ -292,38 +251,135 @@ img.modal-close{
 }`;
 
 function displayPortfolio() {
-  document.body.appendChild(portfolioPopUp);
-  portfolioPopUp.style.top = '0';
+  const portfolio = [
+    {
+      id: 1,
+      title: 'Keeping track of hundreds of components',
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      techMobile: ['Ruby on rails', 'css', 'Javascript'],
+      techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
+      liveLink: '#',
+      srcLink: '#',
+    },
+    {
+    id: 2,
+    title: 'Keeping track of hundreds of components',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    techMobile: ['Ruby on rails', 'css', 'Javascript'],
+    techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
+    liveLink: '#',
+    srcLink: '#',
+  },
+  {
+  id: 3,
+  title: 'Keeping track of hundreds of components',
+  description:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+  techMobile: ['Ruby on rails', 'css', 'Javascript'],
+  techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
+  liveLink: '#',
+  srcLink: '#',
+  },
+  {
+    id: 4,
+    title: 'Keeping track of hundreds of components',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    techMobile: ['Ruby on rails', 'css', 'Javascript'],
+    techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
+    liveLink: '#',
+    srcLink: '#',
+    },
+    {
+      id: 5,
+      title: 'Keeping track of hundreds of components',
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      techMobile: ['Ruby on rails', 'css', 'Javascript'],
+      techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
+      liveLink: '#',
+      srcLink: '#',
+      },
+      {
+        id: 6,
+        title: 'Keeping track of hundreds of components',
+        description:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+        techMobile: ['Ruby on rails', 'css', 'Javascript'],
+        techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
+        liveLink: '#',
+        srcLink: '#',
+        }
+  ]
+
+  const portfolioPopUp = document.createElement('div'); // Create popup div
+portfolioPopUp.className = 'popup';
+
+   for (let num of portfolio){
+portfolioPopUp.innerHTML = `
+<div class="content">
+<div class="modal-close"><img src="images/modal-close.png" onlick='() => {portfolioPopUp.classList.toggle('content')}()' alt=""></div>
+<div class="thumbnail"><img class="modal-close" src="images/mobile-close-modal.png" alt="close-modal"> </div>
+<div class="content-description"> 
+    <div class="deskstop-display">
+    <h2>${num.title}</h2>
+    <div class="live-project"><button>See Live <img src="images/live-icon.png" alt=""> </button>
+        <button>See Source <img src="images/source-icom.png" alt=""> </button>
+
+     </div>
+     </div>
+    <ul class="mobile-list"><li>${num.techMobile[0]}</li>
+        <li>${num.techMobile[1]}</li>
+        <li>${num.techMobile[2]}</li>
+    </ul>
+    <ul class="deskstop-list">
+        <li>${num.techDeskstop[0]}</li>
+        <li>${num.techDeskstop[1]}</li>
+        <li>${num.techDeskstop[2]}</li>
+        <li>${num.techDeskstop[3]}</li>
+        <li>${num.techDeskstop[4]}</li>
+        <li>${num.techDeskstop[5]}</li>
+    </ul>
+    <p>${num.description}</p>
+         <div class="live-project"><button>See Live <img src="images/live-icon.png" alt=""> </button>
+            <button>See Source <img src="images/source-icom.png" alt=""> </button>
+
+         </div>
+</div>
+</div>
+`;
+document.body.appendChild(portfolioPopUp);
+   portfolioPopUp.classList.toggle('content');
   document.body.style.overflow = 'hidden';
   document.head.appendChild(style);
   
-  function closePopup() {
-  portfolioPopUp.style.top = '-110%'; 
-  document.body.style.overflow = 'scroll'; 
+  
+
+  
+} //each close
+
+function closeModal () {
+  portfolioPopUp.style.top = '-100%';
+document.body.style.overflow = 'scroll';   
 }
 
-  const closePortfolio = document.querySelectorAll('.modal-close');
- closePortfolio.forEach((item) => {
- item.addEventListener('click', closePopup); // Close event
-});
-
-window.onclick = function(e) {
-  if (e.target == portfolioPopUp) {
-  portfolioPopUp.style.top = '-110%'; 
-  document.body.style.overflow = 'scroll';   
-  }
-}
-}
-
-
-
+const portfolioclose = document.querySelectorAll('.modal-close');
+portfolioclose.forEach((item) => {
+ item.addEventListener('click', closeModal);
+})
+}// display close
 
 
 // displayProject();
+
+
 
 const portfoliobtn = document.querySelectorAll('.see-project');
 portfoliobtn.forEach((item) => {
   item.addEventListener('click', displayPortfolio); //display event
 });
+
 
 
