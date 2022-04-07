@@ -32,6 +32,7 @@ style.innerHTML = `
   min-width: 100vw;
   min-height: 100vh;
   overflow-y: scroll !important;
+  blur(3px);
 }
 
 .popup .content {
@@ -362,13 +363,20 @@ document.body.appendChild(portfolioPopUp);
 
 function closeModal () {
   portfolioPopUp.style.top = '-100%';
-document.body.style.overflow = 'scroll';   
+  document.body.style.overflow = 'scroll';   
 }
 
 const portfolioclose = document.querySelectorAll('.modal-close');
 portfolioclose.forEach((item) => {
  item.addEventListener('click', closeModal);
 })
+
+window.onclick = (e) => {
+  if (e.target == portfolioPopUp) {
+    portfolioPopUp.style.top = '-100%';
+    document.body.style.overflow = 'scroll';
+}
+}
 }// display close
 
 
@@ -380,6 +388,19 @@ const portfoliobtn = document.querySelectorAll('.see-project');
 portfoliobtn.forEach((item) => {
   item.addEventListener('click', displayPortfolio); //display event
 });
+
+//form validation
+
+const Form = document.querySelector('.form-layout');
+const email = document.getElementById('email-address');
+const ErrorMsg = document.querySelector('.validationMessage');
+
+Form.addEventListener('submit', (e)=> {
+  if (/[A-Z]/.test(email.value)) {
+    ErrorMsg.innerHTML = `Kindly change your email address to lowercase. <br> for example ${email.value.toLowerCase()}` ;
+    e.preventDefault();
+  }
+  })
 
 
 

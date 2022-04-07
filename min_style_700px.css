@@ -5,8 +5,12 @@ body {
   font-style: normal;
 }
 
-.no-scoll {
-  overflow: hidden;
+.form-layout .validationMessage {
+  height: 15%;
+  color: #e2505c;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2vw;
 }
 
 ul {
