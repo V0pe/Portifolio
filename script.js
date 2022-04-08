@@ -391,16 +391,44 @@ portfoliobtn.forEach((item) => {
 
 //form validation
 
-const Form = document.querySelector('.form-layout');
+const form = document.querySelector('.form-layout');
 const email = document.getElementById('email-address');
-const ErrorMsg = document.querySelector('.validationMessage');
+const errorMsg = document.querySelector('.validationMessage');
+const fullName = document.getElementById('full-name');
+const comment = document.getElementById('message');
 
-Form.addEventListener('submit', (e)=> {
+form.addEventListener('submit', (e)=> {
   if (/[A-Z]/.test(email.value)) {
-    ErrorMsg.innerHTML = `Kindly change your email address to lowercase. <br> for example ${email.value.toLowerCase()}` ;
+    errorMsg.innerHTML = `Kindly change your email address to lowercase. <br> for example ${email.value.toLowerCase()}` ;
     e.preventDefault();
   }
-  })
+})
+
+function localSave() {
+  const setData = {
+    name: fullName.value,
+    Email: email.value,
+    Comment: comment.value,
+  };
+  localStorage.setItem('SavedData', JSON.stringify(setData));
+}
+
+function getSave(){
+  const getData = JSON.parse(localStorage.getItem('SavedData'));
+  email.value = getData.Email;
+  fullName.value = getData.name;
+  comment.value = getData.Comment;
+}
+
+if (!localStorage.getItem('SavedData')) {
+  const SavedData = { name: '', Email: '', Comment: '' };
+  localStorage.setItem('SavedData', JSON.stringify(SavedData));
+} else {
+  getSave()
+}
+
+form.addEventListener('change', localSave)
+
 
 
 
