@@ -397,7 +397,7 @@ const ErrorMsg = document.querySelector('.validationMessage');
 
 Form.addEventListener('submit', (e)=> {
   if (/[A-Z]/.test(email.value)) {
-    ErrorMsg.innerHTML = `Kindly change your email address to lowercase. <br> for example ${email.value.toLowerCase()}` ;
+    ErrorMsg.innerHTML = `Kindly change your email address to lowercase.` ;
     e.preventDefault();
   }
   })
