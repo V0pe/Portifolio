@@ -362,7 +362,7 @@ document.body.appendChild(portfolioPopUp);
 } //each close
 
 function closeModal () {
-  portfolioPopUp.style.top = '-100%';
+  portfolioPopUp.style.top = '-110%';
   document.body.style.overflow = 'scroll';   
 }
 
@@ -373,7 +373,7 @@ portfolioclose.forEach((item) => {
 
 window.onclick = (e) => {
   if (e.target == portfolioPopUp) {
-    portfolioPopUp.style.top = '-100%';
+    portfolioPopUp.style.top = '-110%';
     document.body.style.overflow = 'scroll';
 }
 }
@@ -397,7 +397,8 @@ const ErrorMsg = document.querySelector('.validationMessage');
 
 Form.addEventListener('submit', (e)=> {
   if (/[A-Z]/.test(email.value)) {
-    ErrorMsg.innerHTML = `Kindly change your email address to lowercase.` ;
+    ErrorMsg.innerHTML = `Kindly change your email address to lowercase.<br> for example ${email.value.toLowerCase()}
+    ` ;
     e.preventDefault();
   }
   })
