@@ -395,7 +395,7 @@ const form = document.querySelector('.form-layout');
 const email = document.getElementById('email-address');
 const errorMsg = document.querySelector('.validationMessage');
 const fullName = document.getElementById('full-name');
-const comment = document.getElementById('message');
+const userMessage = document.getElementById('message');
 
 form.addEventListener('submit', (e)=> {
   if (/[A-Z]/.test(email.value)) {
@@ -408,7 +408,7 @@ function localSave() {
   const setData = {
     name: fullName.value,
     Email: email.value,
-    Comment: comment.value,
+    Comment: userMessage.value,
   };
   localStorage.setItem('SavedData', JSON.stringify(setData));
 }
@@ -417,7 +417,7 @@ function getSave(){
   const getData = JSON.parse(localStorage.getItem('SavedData'));
   email.value = getData.Email;
   fullName.value = getData.name;
-  comment.value = getData.Comment;
+  userMessage.value = getData.Comment;
 }
 
 if (!localStorage.getItem('SavedData')) {
