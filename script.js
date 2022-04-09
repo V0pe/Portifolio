@@ -400,7 +400,6 @@ const comment = document.getElementById('message');
 form.addEventListener('submit', (e)=> {
   if (/[A-Z]/.test(email.value)) {
     errorMsg.innerHTML = `Kindly change your email address to lowercase. <br> for example ${email.value.toLowerCase()}` ;
-    e.preventDefault();
   }
 })
 
