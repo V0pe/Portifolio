@@ -251,7 +251,7 @@ img.modal-close{
 }
 }`;
 
-function displayPortfolio() {
+function displayPortfolio(id) {
   const portfolio = [
     {
       id: 1,
@@ -259,7 +259,7 @@ function displayPortfolio() {
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
       techMobile: ['Ruby on rails', 'css', 'Javascript'],
-      techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
+      techDeskstop: ['1Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
       liveLink: '#',
       srcLink: '#',
     },
@@ -269,7 +269,7 @@ function displayPortfolio() {
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     techMobile: ['Ruby on rails', 'css', 'Javascript'],
-    techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
+    techDeskstop: ['2Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
     liveLink: '#',
     srcLink: '#',
   },
@@ -279,7 +279,7 @@ function displayPortfolio() {
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   techMobile: ['Ruby on rails', 'css', 'Javascript'],
-  techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
+  techDeskstop: ['3Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
   liveLink: '#',
   srcLink: '#',
   },
@@ -289,7 +289,7 @@ function displayPortfolio() {
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     techMobile: ['Ruby on rails', 'css', 'Javascript'],
-    techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
+    techDeskstop: ['4Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
     liveLink: '#',
     srcLink: '#',
     },
@@ -299,7 +299,7 @@ function displayPortfolio() {
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
       techMobile: ['Ruby on rails', 'css', 'Javascript'],
-      techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
+      techDeskstop: ['5Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
       liveLink: '#',
       srcLink: '#',
       },
@@ -309,7 +309,7 @@ function displayPortfolio() {
         description:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
         techMobile: ['Ruby on rails', 'css', 'Javascript'],
-        techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
+        techDeskstop: ['6Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
         liveLink: '#',
         srcLink: '#',
         }
@@ -317,11 +317,10 @@ function displayPortfolio() {
 
   const portfolioPopUp = document.createElement('div'); // Create popup div
 portfolioPopUp.className = 'popup';
-
-   for (let num of portfolio){
+const num = portfolio[id];
 portfolioPopUp.innerHTML = `
 <div class="content">
-<div class="modal-close"><img src="images/modal-close.png" onlick='() => {portfolioPopUp.classList.toggle('content')}()' alt=""></div>
+<div class="modal-close"><img src="images/modal-close.png" alt=""></div>
 <div class="thumbnail"><img class="modal-close" src="images/mobile-close-modal.png" alt="close-modal"> </div>
 <div class="content-description"> 
     <div class="deskstop-display">
@@ -352,7 +351,6 @@ portfolioPopUp.innerHTML = `
 </div>
 `;
 document.body.appendChild(portfolioPopUp);
-   portfolioPopUp.classList.toggle('content');
   document.body.style.overflow = 'hidden';
   document.head.appendChild(style);
   
@@ -371,23 +369,21 @@ portfolioclose.forEach((item) => {
  item.addEventListener('click', closeModal);
 })
 
-window.onclick = (e) => {
-  if (e.target == portfolioPopUp) {
-    portfolioPopUp.style.top = '-110%';
-    document.body.style.overflow = 'scroll';
-}
-}
-}// display close
+
+// display close
 
 
 // displayProject();
 
 
 
-const portfoliobtn = document.querySelectorAll('.see-project');
-portfoliobtn.forEach((item) => {
-  item.addEventListener('click', displayPortfolio); //display event
-});
+// const portfoliobtn = document.querySelectorAll('.see-project');
+// portfoliobtn.forEach((item) => {
+//   item.addEventListener('click', () => {
+//     // displayPortfolio(this.id);
+//     console.log(this.id);
+//   }); //display event
+// });
 
 //form validation
 
@@ -400,6 +396,7 @@ const comment = document.getElementById('message');
 form.addEventListener('submit', (e)=> {
   if (/[A-Z]/.test(email.value)) {
     errorMsg.innerHTML = `Kindly change your email address to lowercase. <br> for example ${email.value.toLowerCase()}` ;
+    e.preventDefault();
   }
 })
 
@@ -426,7 +423,7 @@ if (!localStorage.getItem('SavedData')) {
   getSave()
 }
 
-form.addEventListener('change', localSave)
+form.addEventListener('submit', localSave)
 
 
 
