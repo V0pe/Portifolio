@@ -91,6 +91,11 @@ nav .fa {
   white-space: pre-line;
 }
 
+.primary p span {
+  color: #1b5a40;
+  font-weight: bold;
+}
+
 .primary h1 span {
   color: #1b5a40;
 }
