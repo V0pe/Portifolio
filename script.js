@@ -251,7 +251,7 @@ img.modal-close{
 }
 }`;
 
-function displayPortfolio() {
+function displayPortfolio(id) {
   const portfolio = [
     {
       id: 1,
@@ -262,6 +262,7 @@ function displayPortfolio() {
       techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
       liveLink: '#',
       srcLink: '#',
+      images: '.',
     },
     {
     id: 2,
@@ -272,6 +273,7 @@ function displayPortfolio() {
     techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
     liveLink: '#',
     srcLink: '#',
+    images: '.',
   },
   {
   id: 3,
@@ -282,6 +284,7 @@ function displayPortfolio() {
   techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
   liveLink: '#',
   srcLink: '#',
+  images: '.',
   },
   {
     id: 4,
@@ -292,6 +295,7 @@ function displayPortfolio() {
     techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
     liveLink: '#',
     srcLink: '#',
+    images: '.',
     },
     {
       id: 5,
@@ -302,6 +306,7 @@ function displayPortfolio() {
       techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
       liveLink: '#',
       srcLink: '#',
+      images: '.',
       },
       {
         id: 6,
@@ -312,16 +317,16 @@ function displayPortfolio() {
         techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
         liveLink: '#',
         srcLink: '#',
+        images: '.',
         }
   ]
 
   const portfolioPopUp = document.createElement('div'); // Create popup div
 portfolioPopUp.className = 'popup';
-
-   for (let num of portfolio){
+const num = portfolio[id]
 portfolioPopUp.innerHTML = `
 <div class="content">
-<div class="modal-close"><img src="images/modal-close.png" onlick='() => {portfolioPopUp.classList.toggle('content')}()' alt=""></div>
+<div class="modal-close"><img src="images/modal-close.png" alt=""></div>
 <div class="thumbnail"><img class="modal-close" src="images/mobile-close-modal.png" alt="close-modal"> </div>
 <div class="content-description"> 
     <div class="deskstop-display">
@@ -352,42 +357,45 @@ portfolioPopUp.innerHTML = `
 </div>
 `;
 document.body.appendChild(portfolioPopUp);
-   portfolioPopUp.classList.toggle('content');
   document.body.style.overflow = 'hidden';
   document.head.appendChild(style);
+ 
+  function closeModal () {
+    portfolioPopUp.style.top = '-110%';
+    document.body.style.overflow = 'scroll';   
+  }
   
+  const portfolioclose = document.querySelectorAll('.modal-close');
+  portfolioclose.forEach((item) => {
+   item.addEventListener('click', closeModal);
+  });
   
 
   
 } //each close
 
-function closeModal () {
-  portfolioPopUp.style.top = '-110%';
-  document.body.style.overflow = 'scroll';   
-}
 
-const portfolioclose = document.querySelectorAll('.modal-close');
-portfolioclose.forEach((item) => {
- item.addEventListener('click', closeModal);
-})
 
-window.onclick = (e) => {
-  if (e.target == portfolioPopUp) {
-    portfolioPopUp.style.top = '-110%';
-    document.body.style.overflow = 'scroll';
-}
-}
-}// display close
+// window.onclick = (e) => {
+//   if (e.target == portfolioPopUp) {
+//     portfolioPopUp.style.top = '-110%';
+//     document.body.style.overflow = 'scroll';
+// }
+// }
+// display close
 
 
 // displayProject();
 
 
 
-const portfoliobtn = document.querySelectorAll('.see-project');
-portfoliobtn.forEach((item) => {
-  item.addEventListener('click', displayPortfolio); //display event
-});
+// const portfoliobtn = document.querySelectorAll('.see-project');
+// portfoliobtn.forEach((item) => {
+//   item.addEventListener('click', () => {
+//     // displayPortfolio(this.id);
+//     console.log(this.id);
+//   }); //display event
+// });
 
 //form validation
 
@@ -427,7 +435,7 @@ if (!localStorage.getItem('SavedData')) {
   getSave()
 }
 
-form.addEventListener('change', localSave)
+form.addEventListener('submit', localSave)
 
 
 
