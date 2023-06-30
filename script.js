@@ -255,14 +255,14 @@ function displayPortfolio(id) {
   const portfolio = [
     {
       id: 1,
-      title: 'Keeping track of hundreds of components',
+      title: 'Fashion Curator Global Meet',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      techMobile: ['Ruby on rails', 'css', 'Javascript'],
-      techDeskstop: ['Codekit', 'Github','Javascript','Bootstrap','Terminal','Codepen'],
-      liveLink: '#',
-      srcLink: '#',
-      images: '.',
+        "This is a Capstone project organized by Microverse. This website is about the fashion show conference holding globally. It helps young designers to learn from the best And forward asssit with connecting with potential investors.",
+      techMobile: ['Html', 'Css', 'Javascript'],
+      techDeskstop: ['EsLint', 'Css','Javascript','Bootstrap','Terminal','Codepen'],
+      liveLink: 'https://v0pe.github.io/Conference-Capstone-/index.html',
+      srcLink: 'https://github.com/V0pe/Conference-Capstone-',
+      images: './images/conference-img.png',
     },
     {
     id: 2,
@@ -327,7 +327,7 @@ const num = portfolio[id]
 portfolioPopUp.innerHTML = `
 <div class="content">
 <div class="modal-close"><img src="images/modal-close.png" alt=""></div>
-<div class="thumbnail"><img class="modal-close" src="images/mobile-close-modal.png" alt="close-modal"> </div>
+<div class="thumbnail"><img class="modal-close" src="${num.images}" alt="close-modal"> </div>
 <div class="content-description"> 
     <div class="deskstop-display">
     <h2>${num.title}</h2>
